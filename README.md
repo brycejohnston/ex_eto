@@ -1,6 +1,12 @@
-# ExEto
+# ExETo
 
-**TODO: Add description**
+Elixir package for calculating reference/potential evapotranspiration (ETo), also referred to as potential evapotranspiration (PET), using the FAO-56 Penman-Monteith method. This was originally ported into Ruby from the [PyETo Python package from Mark Richards](https://github.com/woodcrafty/PyETo). The package provides numerous methods for estimating missing meteorological data.
+
+Three methods for estimating ETo/PET are implemented:
+
+FAO-56 Penman-Monteith (Allen et al, 1998)
+Hargreaves (Hargreaves and Samani, 1982; 1985)
+Thornthwaite (Thornthwaite, 1948)
 
 ## Installation
 
