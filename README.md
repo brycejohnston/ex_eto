@@ -4,9 +4,9 @@ Elixir package for calculating reference/potential evapotranspiration (ETo), als
 
 Three methods for estimating ETo/PET are implemented:
 
-FAO-56 Penman-Monteith (Allen et al, 1998)
-Hargreaves (Hargreaves and Samani, 1982; 1985)
-Thornthwaite (Thornthwaite, 1948)
+- FAO-56 Penman-Monteith (Allen et al, 1998)
+- Hargreaves (Hargreaves and Samani, 1982; 1985)
+- Thornthwaite (Thornthwaite, 1948)
 
 ## Installation
 

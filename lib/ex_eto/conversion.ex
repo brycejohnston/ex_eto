@@ -1,4 +1,4 @@
-defmodule ExEto.Conversion do
+defmodule ExETo.Conversion do
   @moduledoc """
   Common unit conversion helper functions
   """
@@ -7,7 +7,7 @@ defmodule ExEto.Conversion do
   Convert temperature in degrees Celsius to degrees Kelvin
 
   ## Parameters
-    - celsius: Degrees Celsius
+    - celsius: degrees celsius
 
   ## Examples:
 
@@ -23,7 +23,7 @@ defmodule ExEto.Conversion do
   Convert temperature in degrees Kelvin to degrees Celsius
 
   ## Parameters
-    - kelvin: Degrees Kelvin
+    - kelvin: degrees kelvin
 
   ## Examples:
 
@@ -39,7 +39,7 @@ defmodule ExEto.Conversion do
   Convert angular degrees to radians
 
   ## Parameters
-    - degrees: Value in degrees to be converted
+    - degrees: value in degrees to be converted
 
   ## Examples:
 
@@ -55,7 +55,7 @@ defmodule ExEto.Conversion do
   Convert radians to angular degrees
 
   ## Parameters
-    - radians: Value in radians to be converted
+    - radians: value in radians to be converted
 
   ## Examples:
 
@@ -71,7 +71,7 @@ defmodule ExEto.Conversion do
   Convert km/hr to m/s
 
   ## Parameters
-    - kph: Kilometers per hour
+    - kph: kilometers per hour
 
   ## Examples:
 
