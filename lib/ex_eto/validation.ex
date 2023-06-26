@@ -20,17 +20,22 @@ defmodule ExETo.Validation do
 
   ## Parameters
     - hours: day hours
+    - arg_name: name of argument being passed
 
   ## Examples:
 
-      iex> ExEto.Validation.check_day_hours(11)
+      iex> ExEto.Validation.check_day_hours(11, "sunshine_hours")
 
   """
-  @spec check_day_hours(integer) :: {:ok, integer}
-  def check_day_hours(hours) when is_integer(hours) and hours in 0..24, do: {:ok, hours}
+  @spec check_day_hours(integer, binary) :: {:ok, integer}
+  def check_day_hours(hours, _arg_name) when is_integer(hours) and hours in 0..24,
+    do: {:ok, hours}
 
-  def check_day_hours(hours),
-    do: {:error, "hours should be integer in the range 0-24: #{hours}"}
+  def check_day_hours(hours, arg_name),
+    do:
+      raise(ArgumentError,
+        message: "#{arg_name} hours should be integer in the range 0-24: #{hours}"
+      )
 
   @doc """
   Check day of year is in valid range
@@ -47,7 +52,10 @@ defmodule ExETo.Validation do
   def check_doy(doy) when is_integer(doy) and doy in 1..366, do: {:ok, doy}
 
   def check_doy(doy),
-    do: {:error, "day of the year (doy) should be integer in the range 1-366: #{doy}"}
+    do:
+      raise(ArgumentError,
+        message: "day of the year (doy) should be integer in the range 1-366: #{doy}"
+      )
 
   @doc """
   Check latitude is within valid range
@@ -67,8 +75,10 @@ defmodule ExETo.Validation do
 
   def check_latitude_rad(latitude),
     do:
-      {:error,
-       "latitude should be number in the range #{@minlat_radians} to #{@maxlat_radians} #{latitude}"}
+      raise(ArgumentError,
+        message:
+          "latitude should be number in the range #{@minlat_radians} to #{@maxlat_radians} #{latitude}"
+      )
 
   @doc """
   Check solar declination is in valid range
@@ -88,8 +98,10 @@ defmodule ExETo.Validation do
 
   def check_sol_dec_rad(sd),
     do:
-      {:error,
-       "solar declination should be number in the range #{@minsoldec_radians} to #{@maxsoldec_radians} #{sd}"}
+      raise(ArgumentError,
+        message:
+          "solar declination should be number in the range #{@minsoldec_radians} to #{@maxsoldec_radians} #{sd}"
+      )
 
   @doc """
   Check sunset hour angle is in valid range
@@ -109,6 +121,8 @@ defmodule ExETo.Validation do
 
   def check_sunset_hour_angle_rad(sha),
     do:
-      {:error,
-       "sunset hour angle should be number in the range #{@minsha_radians} to #{@maxsha_radians} #{sha}"}
+      raise(ArgumentError,
+        message:
+          "sunset hour angle should be number in the range #{@minsha_radians} to #{@maxsha_radians} #{sha}"
+      )
 end

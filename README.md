@@ -1,6 +1,11 @@
 # ExETo
 
-Elixir package for calculating reference/potential evapotranspiration (ETo), also referred to as potential evapotranspiration (PET), using the FAO-56 Penman-Monteith method. This was originally ported into Ruby from the [PyETo Python package from Mark Richards](https://github.com/woodcrafty/PyETo). The package provides numerous methods for estimating missing meteorological data.
+[![hex.pm](https://img.shields.io/hexpm/v/ex_eto.svg)](https://hex.pm/packages/ex_eto)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/ex_eto/)
+[![hex.pm](https://img.shields.io/hexpm/dt/ex_eto.svg)](https://hex.pm/packages/ex_eto)
+[![hex.pm](https://img.shields.io/hexpm/l/ex_eto.svg)](https://hex.pm/packages/ex_eto)
+
+Elixir package for calculating reference/potential evapotranspiration (ETo), also referred to as potential evapotranspiration (PET), using the FAO-56 Penman-Monteith method. This is ported from the [Ruby evapotranspiration gem](https://github.com/brycejohnston/evapotranspiration) which is based on the [PyETo Python package from Mark Richards](https://github.com/woodcrafty/PyETo). The package provides numerous methods for estimating missing meteorological data.
 
 Three methods for estimating ETo/PET are implemented:
 
@@ -10,8 +15,7 @@ Three methods for estimating ETo/PET are implemented:
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ex_eto` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `ex_eto` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -20,8 +24,4 @@ def deps do
   ]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/ex_eto>.
 

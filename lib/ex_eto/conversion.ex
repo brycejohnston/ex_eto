@@ -9,7 +9,7 @@ defmodule ExETo.Conversion do
   ## Parameters
     - celsius: degrees celsius
 
-  ## Examples:
+  ## Examples
 
       iex> ExEto.Conversion.celsius_to_kelvin(20)
 
@@ -25,7 +25,7 @@ defmodule ExETo.Conversion do
   ## Parameters
     - kelvin: degrees kelvin
 
-  ## Examples:
+  ## Examples
 
       iex> ExEto.Conversion.kelvin_to_celsius(293.15)
 
@@ -41,7 +41,7 @@ defmodule ExETo.Conversion do
   ## Parameters
     - degrees: value in degrees to be converted
 
-  ## Examples:
+  ## Examples
 
       iex> ExEto.Conversion.deg_to_rad(96.5)
 
@@ -57,7 +57,7 @@ defmodule ExETo.Conversion do
   ## Parameters
     - radians: value in radians to be converted
 
-  ## Examples:
+  ## Examples
 
       iex> ExEto.Conversion.rad_to_deg(1.72)
 
@@ -73,7 +73,7 @@ defmodule ExETo.Conversion do
   ## Parameters
     - kph: kilometers per hour
 
-  ## Examples:
+  ## Examples
 
       iex> ExEto.Conversion.kph_to_mps(15)
 
